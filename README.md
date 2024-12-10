@@ -33,17 +33,23 @@ Eg :
 
 
 ### Products (Protected Routes)
-```
-GET /api/products
-- Get all products
+
+POST /api/products 
 - Headers: Authorization: Bearer <token>
-- 
+
 Eg: {
      "id": 1,
      "dataCategory": "Keyboard",
      "recordCount": 200,
      "fields": "k40,$10000,logitech"
     }
+
+```
+GET /api/products
+- Get all products
+- Headers: Authorization: Bearer <token>
+- 
+
 
  
 GET /api/products/:id
