@@ -12,7 +12,7 @@ npm install
 npm start
 ```
 
-The server will run on http://localhost:3001
+The server will run on http://localhost:3008
 
 ## API Endpoints
 
@@ -31,13 +31,6 @@ Eg :
     }
 ```
 
-### Authentication
-```
-POST /api/auth/login
-- Login user
-- Body: { "email": "string", "password": "string" }
-- Returns: { user: {...}, token: "string" }
-```
 
 ### Products (Protected Routes)
 ```
