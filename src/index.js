@@ -4,7 +4,7 @@ import db from "./db/index.js";
 
 dotenv.config();
 
-const port = process.env.PORT 
+const port = 3008 
 
 console.log("Trying to run on PORT => ", process.cwd());
 
