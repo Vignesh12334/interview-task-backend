@@ -33,9 +33,13 @@ Eg :
 
 
 ### Products (Protected Routes)
+```
 
-POST /api/products 
+POST /api/products
+- Create new product
 - Headers: Authorization: Bearer <token>
+- Body: { "dataCategory": "string", "recordCount": number, "fields": "string" }
+- Returns: Created product
 
 Eg: {
      "id": 1,
@@ -44,7 +48,6 @@ Eg: {
      "fields": "k40,$10000,logitech"
     }
 
-```
 GET /api/products
 - Get all products
 - Headers: Authorization: Bearer <token>
@@ -57,11 +60,7 @@ GET /api/products/:id
 - Headers: Authorization: Bearer <token>
 - Returns: Single product
 
-POST /api/products
-- Create new product
-- Headers: Authorization: Bearer <token>
-- Body: { "dataCategory": "string", "recordCount": number, "fields": "string" }
-- Returns: Created product
+
 ```
 
 ## Database Schema
